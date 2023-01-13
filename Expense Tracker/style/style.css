@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+.image{
+   width: 15%;
+   height: auto;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(235, 226, 226); 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-weight: 450;
+}
+
+.container{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.balance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 13rem;
+}
+
+.title-balance{
+    padding-top: 1rem;
+}
+
+.history{
+    padding-top: 1rem;
+}
+
+.Trans{
+    padding-top: 1rem;
+}
+.inc-exp-container{
+    background-color: white;
+    padding: 15px 20px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.inc-exp-container > div {
+    flex: 1;
+    text-align: center;
+    margin: 0 20px;
+}
+
+.inc-exp-container > div:first-of-type {
+    border-right: 1px solid black;
+    padding-right: 40px;
+}
+
+.money{
+    font-size: 20px;
+    margin: 5px 0;
+}
+
+.money-plus{
+    color: green;
+}
+
+.money-minus{
+    color: red;
+}
+
+label{
+    display: inline-block;
+    margin: 10px 0;
+    width: 100%;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 2px;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(18, 18, 77);
+    color: white;
+    display: block;
+    width: 100%;
+    margin: 10px 0 30px;
+    padding: 1rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.list li{
+    list-style: none;
+    margin-bottom: 20px;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(0,0,0, 0.12);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 10px;
+    margin: 10px 0;
+    width: 320px;
+}
+
+.list li.plus span{
+    color: green;
+}
+
+.list li.minus span{
+    color: red;
+}
+
+.delete-btn{
+    cursor: pointer;
+    background-color: #dc3545;
+    border:0;
+    color: white;
+    font-size: 1.5rem;
+    padding: 2px 5px;
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(-100%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.Trans-head{
+    padding-top: 1rem;
+}
+.list li:hover .delete-btn {
+    opacity: 1;
+}

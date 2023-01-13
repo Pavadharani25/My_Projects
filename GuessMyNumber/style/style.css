@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(./number.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+
+}
+
+.container{
+ background-color: beige;
+ margin: auto;     
+ padding: 3rem;
+}
+
+.heading{
+    color: purple;
+    padding-bottom: 2rem;
+}
+.sub-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    font-size: 25px;
+}
+
+.btn-again {
+    padding: 0.5rem;
+    margin-left: 6rem;
+    margin-right:5rem;
+    background-color: rebeccapurple;
+    color: white;
+    }
+
+.secret-number{
+    width: 100%;
+    padding: 1rem;
+    font-weight: 500;
+}
+
+.btn-check{
+    padding: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background-color: rgb(41, 236, 51);
+    font-weight: 600;
+}
+
+.message{
+    margin-top: 1rem;
+    margin-bottom: 1rem;   
+    font-size: 20px; 
+    background-color: rgb(112, 226, 226);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.score{
+    font-weight: 500;
+    font-size: 18px;
+    color: rgb(252, 67, 0);
+}

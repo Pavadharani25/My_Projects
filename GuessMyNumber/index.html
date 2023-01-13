@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Guess My Number</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+ <div class="container">
+    <header>
+        <h1 class="heading">Guess The Number</h1>
+        <p class="sub-heading">Between 1 and 20</p>
+        <button class="btn-again btn" id="btn-again">New Start</button>
+        <p class="message" id="message">Start Guessing...😇</p>
+    </header>
+    <main class="main">
+        <div class="left">
+            <p>Enter the Number:</p>
+            <input type="number" class="secret-number" id="secret-number"/>
+            <button class="btn-check btn" id="btn-check">Check</button>
+        </div>
+        <div class="right">
+            
+            <p class="score">Score:  <span class="label-score" id="label-score">20</span></p>
+            <p class="score">HighScore:  <span class="high-score" id="high-score">0</span></p>
+        </div>
+
+    </main>
+</div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
